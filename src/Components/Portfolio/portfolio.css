@@ -6,6 +6,7 @@
     display: flex;
     /* border-top: solid 2px white; */
     position: relative;
+	padding-top:2.5vmin
     /* padding-bottom: 5rem; */
 }
 /* #portfolio::after{
