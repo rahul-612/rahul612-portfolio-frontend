@@ -5,6 +5,7 @@ import "./about.css";
 import "./about_res.css";
 import aboutImg from "../utility/images/about.jpg"
 import { useInView } from 'react-intersection-observer';
+import resume from "../utility/Resume.pdf";
 
 const About = () => {
   const { ref, inView, entry } = useInView({threshold: 0,triggerOnce:true});
@@ -38,7 +39,7 @@ const About = () => {
            <a href="#contact" > Let's make something special.</a>
            <span className={inView===true?"cover textAni":"cover"}></span>
 </p>
-            <a href="" className=' aboutBtn'>Download my CV 
+            <a href={resume} className=' aboutBtn' download>Download my CV 
             <span className={inView===true?"cover textAni":"cover"} ></span></a>
           </div>
         </div>

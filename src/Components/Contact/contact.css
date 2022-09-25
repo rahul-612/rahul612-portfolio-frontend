@@ -74,9 +74,9 @@
     color: #fff;
   border: 2px solid rgba(255,255,255,.5);
   transition: .3s all ease;
-  font-size: 13px;
+  font-size: 11px;
   border-radius: 30px;
-  padding: 2vmin 8vmin;
+  padding: 2.5vmin 5vmin;
   letter-spacing: .1rem;
   text-transform: uppercase;
   font-weight: 900;
