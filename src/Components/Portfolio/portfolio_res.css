@@ -1,0 +1,36 @@
+@media only screen and (min-width:768px)and (max-width:1024px){
+    .portHead h1{
+        font-size: 4vmin;
+    }
+    .menu_btn{
+        font-size: 2vmin;
+        margin-left: 1.8vmin;
+    }
+    .projectContainer{
+        width: 68.7vw;
+    }
+    .projectCard{
+        width: 18vmin;
+        height: 18vmin;
+        margin: 4vmin 3vmin;
+        padding: 0 !important;
+    }
+    
+}
+
+@media only screen and (max-width:767px){
+    .portHead{
+        margin-left: 3vmin;
+    }
+    .projectContainer{
+        width: auto;
+        margin-right: 6vmin;
+    }
+    .projectCard{
+        width: 60vmin;
+        height: 40vmin;
+    }
+    .menu_btn{
+        margin-top: 2.8vmin;
+    }
+}

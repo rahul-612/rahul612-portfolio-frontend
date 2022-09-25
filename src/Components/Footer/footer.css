@@ -1,0 +1,88 @@
+#footer{
+    text-align: center;
+    font-weight: 300;
+    color: rgba(255,255,255,.5);
+    padding: 3.5rem 0;
+    position: fixed;    
+    width: 100%;
+    background-color: #191919;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 40rem;
+    
+}
+.footerContainer{
+    width: 60vw;
+    height: 40vh;
+    /* border: 1px solid pink; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    /* margin-top: 5rem; */
+}
+.footerChild{
+    margin-bottom: 3rem;
+}
+.footerLogo > a{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Raleway",sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.footerLogo > a >span {
+    color: var(--primary_color);
+}
+.footerSocialSites > li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+.footerSocialSites > li> a{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgba(255,255,255,.5);
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size:1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footerSocialSites > li> a:hover{
+    color: rgb(255,255,255);  
+}
+.footerCopyright{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgba(255,255,255,.5);
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size:1.4rem;
+    font-weight: 400;
+}
+
+@media only screen and (max-width:767px){
+    #footer{
+        /* height: 25rem; */
+        display: flex;
+    }
+    .footerContainer{
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+    .footerSocialSites li a {
+        padding-top: 10px;
+    }
+}

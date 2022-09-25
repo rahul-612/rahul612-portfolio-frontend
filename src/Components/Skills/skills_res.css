@@ -1,0 +1,16 @@
+@media only screen and (max-width:1024px){
+    .skillContainer{
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width:767px){
+    #skills{
+        height: auto;
+    }
+    .skillCard{
+        margin: 9vmin 2vmin;
+    }
+}

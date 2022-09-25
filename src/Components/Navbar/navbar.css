@@ -1,0 +1,181 @@
+.navBar{
+    background-color: transparent;
+    height: 15vmin;
+    position: relative;
+    z-index: 10;
+}
+.navMenu{
+  justify-content: space-around;
+  align-items: center;
+}
+.mobile_menu{
+  display: none;
+}
+.navLink{
+    margin-left: 10vmin;
+    color: white;
+    font-size: 3vmin;
+    text-decoration: none;
+    font-weight:400;
+    -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.navLink:hover{
+    font-weight: bold;
+    -webkit-animation: dark 1.5s ease-in-out infinite alternate;
+  -moz-animation: dark 1.5s ease-in-out infinite alternate;
+  animation: dark 1.5s ease-in-out infinite alternate; 
+  color:#ffffff; 
+}
+
+@keyframes dark {
+    from {
+      text-shadow: 0 0 5px #fff,
+                 0 0 10px  #fff,
+                 0 0 15px  #fff,
+                 0 0 20px  var(--primary_color),
+                 0 0 35px  var(--primary_color),
+                 0 0 40px  var(--primary_color),
+                 0 0 50px var(--primary_color),
+                 0 0 75px var(--primary_color);
+    }
+    to {
+      text-shadow: 0 0 2.5px #fff,
+                 0 0 5px #fff,
+                 0 0 7.5px #fff,
+                 0 0 10px var(--primary_color),
+                 0 0 18px var(--primary_color),
+                 0 0 20px var(--primary_color),
+                 0 0 25px var(--primary_color),
+                 0 0 40px var(--primary_color);
+    }
+  }
+  
+
+.lightNav{
+    background-color: white;
+    /* color: black; */
+    position: fixed;
+    top:0px;
+    /* left: 30rem; */
+    height: 8vmin;
+    width: 100%;
+    z-index: 12;
+    box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 1px, rgba(255, 255, 255, 0.07) 0px 2px 2px, rgba(255, 255, 255, 0.07) 0px 4px 4px, rgba(255, 255, 255, 0.07) 0px 8px 8px, rgba(255, 255, 255, 0.07) 0px 16px 16px;
+}
+.lightLink{
+    font-weight: 400;
+    color: black;
+    margin-left: 10vmin;
+font-size: 3vmin;
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.lightLink:hover{
+    text-shadow: 0 0 1px var(--primary_color),
+    0 0 .5px  var(--primary_color);
+    color: var(--primary_color);
+}
+
+.active{
+  color: var(--primary_color);
+}
+
+@media only screen and (max-width:1024px) {
+  .navMenu{
+    display: none;
+  }
+  .mobile_menu{
+    /* display: flex; */
+    width: 100vw;
+    /* justify-content: flex-end; */
+    display: grid;
+justify-content: center;
+align-items: center;
+grid-template-columns: 1.5fr 1fr;
+  }
+  .mobile_menu_container{
+    justify-self: end !important;
+  } 
+  .mobile_menu_link_container{
+    display: flex;
+    /* width: 100%; */
+    height: 50vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8vmin;
+  }
+  .mobile_menu_link{
+    font-size: 2vmin;
+    text-decoration: none;
+    color: #fff;
+    transition: all .2s linear;
+    font-weight: 100;
+  }
+  .mobile_menu_link:hover{
+    color: var(--primary_color);
+  }
+
+  .css-1e6y48t-MuiButtonBase-root-MuiButton-root, .css-1ujsas3{
+    font-size: 2.5vmin !important;
+    color: #fff !important;
+    font-weight: 100 !important;
+    margin-right: 4vmin !important;
+  }
+  .css-1e6y48t-MuiButtonBase-root-MuiButton-root::before, .css-1ujsas3::before
+  {
+    left: 7px;
+    right: 7px;
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #fff;
+    bottom: 0;
+    width: 0%;
+    transition: .3s all ease-in-out;
+  }
+  .css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover::before, .css-1ujsas3:hover::before{
+   width: 86%;
+  }
+  .blackColor{
+    color: black !important;
+    font-weight: normal !important;
+  }
+  .blackColor::before{
+    background-color: black;
+  }
+  .whiteColor{
+    color: white;
+  }
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper, .css-wf16b5{
+  background-color: rgba(0, 0, 0, 0.937) !important;
+}
+.mobile_home{
+  justify-self: end;
+align-self: center;
+margin-right: 3.2vmin;
+}
+.mobile_home > a{
+  font-size: 4vmin;
+  font-weight: 700;
+  font-family: "Raleway",sans-serif;
+  color: #000;
+  text-decoration: none;
+
+}
+.mobile_home > a >span{
+  color: var(--primary_color);
+}
+}
+
+@media only screen and (max-width:767px){
+  .mobile_menu_link{
+    font-size: 3.5vmin !important;
+  }
+  .css-1e6y48t-MuiButtonBase-root-MuiButton-root{
+    font-size: 4.5vmin !important;}
+}

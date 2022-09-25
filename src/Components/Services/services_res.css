@@ -1,0 +1,35 @@
+@media only screen and (max-width:1024px){
+.mainServiceContainer{
+    width: 100%;
+    margin-left: 0;
+}
+.serviceCard {
+    margin: 5.5vmin 4.2vmin;
+  }
+  .sCardHeading{
+    font-size: 3vmin;
+  }
+  .sCardDesc{
+    font-size: 1.8vmin;
+  }
+}
+
+@media only screen and (max-width:767px){
+  .mainServiceContainer{
+    width: auto;
+    margin-left: 0;
+    justify-content: center;
+  }
+  .serviceCard{
+    margin: 0;
+    padding: 0;
+    width: 73vmin;
+    height: 39vmin;
+  }
+  .sCardHeading{
+    font-size: 4vmin;
+  }
+  .sCardDesc{
+    font-size: 2.8vmin;
+  }
+}

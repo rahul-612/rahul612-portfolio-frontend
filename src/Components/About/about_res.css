@@ -1,0 +1,45 @@
+@media only screen and (max-width:1024px){
+    .mainAboutContainer{
+        flex-direction: column;
+    }
+    .mainImgContainer{
+        width: 100%;
+        border: none;
+    }
+    .dotted_bg::before{
+        bottom: -5vmin;
+right: -4vmin;
+    }
+    .mainInfoContainer{
+        display: block;
+        max-width: none;
+        width: 136%;
+        padding: 0 8rem;
+        transform: translate(0rem,9rem);
+    }
+    .aboutPara{
+        font-size: 2vmin;
+    }
+    .aboutBtn{
+        margin-top: 0;
+        padding-top: 2vmin;
+padding-bottom: 2vmin;
+padding-left: 4vmin;
+padding-right: 4vmin;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .mainImgContainer{
+        margin-left: 0;
+    }
+    .about_img{
+        transform: translateX(6vmin);
+        max-width: 85%;
+    }
+    .mainInfoContainer{
+        padding: 0;
+        transform: translate(0vmin,9vmin);
+    }
+    
+}

@@ -1,0 +1,21 @@
+/* for tablet - 768px */
+@media only screen and (min-width:768px)and (max-width:1024px){
+    .navBar{
+        justify-content: space-around;
+    }
+    .navBar a{
+        margin-left: 0 ;
+    }
+    /* .homeHead{
+        transform: translate(22%,256%);
+    } */
+}
+@media only screen and (max-width:767px){
+    #home{
+        height: 69vh;
+        background-image: url("../utility/images/home_small.png");
+    }
+    /* .homeHead{
+        align-self: baseline;
+    } */
+}
