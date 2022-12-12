@@ -15,8 +15,8 @@ import AwsNginx from "./Components/Blog/Articles/AwsNginx.jsx"
 import AwsCi from "./Components/Blog/Articles/AwsCi.jsx"
 import AwsRoute53 from "./Components/Blog/Articles/AwsRoute53.jsx"
 import Prism from "prismjs"
-import "./prism.css"
-import "./prism.js"
+// import "./prism.css"
+// import "./prism.js"
 import "prismjs/plugins/toolbar/prism-toolbar.min.css";
 import "prismjs/plugins/toolbar/prism-toolbar.min";
 import "prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min";
