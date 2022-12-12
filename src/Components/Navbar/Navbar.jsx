@@ -56,6 +56,15 @@ const Navbar = ({ theme }) => {
             className={
               theme === "light" ? "lightLink contactNav" : "navLink contactNav"
             }
+            href="#blog"
+            onClick={active}
+          >
+            Blogs
+          </a>
+          <a
+            className={
+              theme === "light" ? "lightLink contactNav" : "navLink contactNav"
+            }
             href="#contact"
             onClick={active}
           >

@@ -13,7 +13,7 @@ const Contact = () => {
     const { error, message, loading } = useSelector(
         (state) => state.user
       );
-        console.log(message)
+        // console.log(message)
 const [fData,setFData]=useState({
     name:"",
     email:"",

@@ -33,6 +33,7 @@ const MobileMenu = ({theme}) => {
             <a className='mobile_menu_link' href="#about" >About</a>
             <a className='mobile_menu_link' href="#services" >Services</a>
             <a className='mobile_menu_link' href="#skills" >Skills</a>
+            <a className='mobile_menu_link' href="#blog" >Blogs</a>
             <a className='mobile_menu_link' href="#contact" >Contact</a>
             </div>
         </Box>

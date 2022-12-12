@@ -24,6 +24,7 @@ import social_media from "./imgs/social-media.jpg"
 import chat_react from "./imgs/chat_react.jpg";
 import resume from "./imgs/resume.jpg";
 import expense from "./imgs/expense_tracker.jpg";
+import lyriks_music from './imgs/lyriks_music.png';
 
 
 
@@ -33,9 +34,16 @@ const Menu = [
     {
         id: i++,
         image:ecomm,
-        name:"Ecommerce",
+        name:"Easy-Bazaar",
         category: "MERN",
         url:"https://easybazaar.herokuapp.com"
+    },
+    {
+        id: i++,
+        image:lyriks_music,
+        name:"Lyriks Music Player",
+        category: "ReactJS",
+        url:"https://lyriks-music-store.netlify.app/"
     },
     {
         id: i++,
