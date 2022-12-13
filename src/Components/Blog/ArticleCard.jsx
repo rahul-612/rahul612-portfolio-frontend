@@ -12,7 +12,7 @@ const ArticleCard = ({id,topic,desc,link}) => {
                     <p>
                       {desc}
                     </p>
-                    <Link className="article_link" to={process.env.NODE_ENV==='production'?`https://rahul612-portfolio.onrender.com${link}`:link}>Read More</Link>
+                    <Link className="article_link" to={link}>Read More</Link>
                   </div>
                 </div>
               </div>
