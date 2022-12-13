@@ -50,7 +50,7 @@ const App = () => {
     <Footer/>
     </Router> */}
 
-    <Router >
+    <Router basename="/">
     <div className="siteContainer">
     <Lines/>
     
