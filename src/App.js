@@ -23,7 +23,6 @@ import "prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min";
 import "prismjs/themes/prism.css"
 import "prismjs/themes/prism-okaidia.min.css"
 
-
 const App = () => {
 
   useEffect(() => {
@@ -51,7 +50,7 @@ const App = () => {
     <Footer/>
     </Router> */}
 
-    <Router basename="/">
+    <Router >
     <div className="siteContainer">
     <Lines/>
     
