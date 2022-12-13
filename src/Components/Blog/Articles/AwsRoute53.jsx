@@ -1,11 +1,17 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import ArticleHead from './utils/ArticleHead';
 import route53 from "../imgs/route53.jpg"
 import aws_route_1 from '../imgs/aws_route_1.png';
 import aws_route_2 from '../imgs/aws_route_2.png';
 import aws_route_3 from '../imgs/aws_route_3.png';
+import Prism from "prismjs"
 
 const AwsRoute53 = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    Prism.highlightAll();
+  }, []);
+
   return (
    <>
     <article className="article_container flex">

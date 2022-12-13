@@ -36,7 +36,7 @@ const Menu = [
         image:ecomm,
         name:"Easy-Bazaar",
         category: "MERN",
-        url:"https://easybazaar.herokuapp.com"
+        url:"http://easybazaar.tk"
     },
     {
         id: i++,
@@ -50,7 +50,7 @@ const Menu = [
         image:social_media,
         name:"Social Media",
         category: "MERN",
-        url:"https://rahul612-social-media-app.herokuapp.com"
+        url:"http://3.109.187.219/"
     },
     {
         id: i++,

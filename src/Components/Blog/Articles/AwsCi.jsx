@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import "./Article.css";
 import ArticleHead from './utils/ArticleHead';
 import cicd from "../imgs/cicd.jpg"
@@ -6,9 +6,14 @@ import { Link } from 'react-router-dom';
 import aws_cicd_1 from '../imgs/aws_cicd_1.png';
 import aws_cicd_2 from '../imgs/aws_cicd_2.png';
 import aws_cicd_3 from '../imgs/aws_cicd_3.png';
-
+import Prism from "prismjs"
 
 const AwsCi = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    Prism.highlightAll();
+  }, []);
+
   return (
     <article className="article_container flex">
     <ArticleHead heading="Creating a secure CI/CD pipeline with GitHub Actions for your MERN application" date="Dec 12, 2022" time="16 min read" img={cicd} alt="cicd"/>
@@ -74,13 +79,20 @@ nano authorized_keys
 `}
               </code>
               </pre></li>
+              <li>This will combine your local unpublished changes with the latest published changes on your remote.
+              <pre style={{ marginTop: "2vmin" }} className="copy-to-clipboard code_highlighter">
+              <code className="language-html">{`git pull --rebase
+`}
+              </code>
+              </pre>
+              </li>
             </ul>
             </div>
             <div className="what_is">
                 <h4>Configure Github Secrets</h4>
                 <img src={aws_cicd_2} alt="aws_cicd_2" />
                 <p>Now create new repository secret one by one</p>
-                <ol><li><strong>KEY:</strong>Your key</li>
+                <ol><li><strong>KEY:</strong>Your SSH Private key</li>
                 <li><strong>HOST:</strong>Your IP Address/Domain</li>
                 <li><strong>INSTANCE_ID:</strong>Your Instance ID</li>
                 <li><strong>PORT:</strong>22</li>

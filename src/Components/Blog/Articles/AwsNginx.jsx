@@ -6,9 +6,15 @@ import aws_mern_2 from "../imgs/aws_mern_2.png";
 import aws_mern_3 from "../imgs/aws_mern_3.png";
 import aws_mern_4 from "../imgs/aws_mern_4.png";
 import ArticleHead from "./utils/ArticleHead.jsx"
+import Prism from "prismjs"
 
 const AwsNginx = () => {
-  // console.log("hey")
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    Prism.highlightAll();
+  }, []);
+
   return (
     <>
       <article className="article_container flex">
@@ -238,7 +244,7 @@ app.get("*",(req,res)=>{
               <li>Go to elastic ip section</li>
               <li>Click on allocate elastic ip address</li>
               <li>Click allocate</li>
-              <li>Once you have createa a new Elastic IP</li>
+              <li>Once you have created a new Elastic IP</li>
               <li>Click on newly created Elastic as shown below</li>
             </ul>
             <img src={aws_mern_3} alt="aws_mern_3" />
@@ -404,7 +410,7 @@ export PORT=4000
                   style={{ marginTop: "2vmin" }}
                   className="copy-to-clipboard code_highlighter"
                 >
-                  <code className="language-js">{`npm install pm2`}</code>
+                  <code className="language-js">{`sudo npm install pm2 -g`}</code>
                 </pre>
               </li>
               <li>
